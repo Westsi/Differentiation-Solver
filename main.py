@@ -19,13 +19,11 @@ def getinputs():
 def differentiatestring(constant, power):
     # differentiate with the power rule into a string in terms of x
     if constant == 0:
-        return ""
+      return ""
     if power == 1:
-        return f"{constant}"
-    if constant == 1:
-        return f"{power}x^{power-1}"
+      return f"{constant}"
     if power == 2:
-        return f"{constant}x"
+      return f"{constant*power}x"
     return f"{constant*power}x^{power-1}"
 
 def differentiate(constant, power, point):
